@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  
+  
+  
+  <entry>
+    <title>修改Unity默认缓存路径</title>
+    <link href="/2024/09/17/%E4%BF%AE%E6%94%B9Unity%E9%BB%98%E8%AE%A4%E7%BC%93%E5%AD%98%E8%B7%AF%E5%BE%84/"/>
+    <url>/2024/09/17/%E4%BF%AE%E6%94%B9Unity%E9%BB%98%E8%AE%A4%E7%BC%93%E5%AD%98%E8%B7%AF%E5%BE%84/</url>
+    
+    <content type="html"><![CDATA[<h1 id="修改Unity默认缓存路径"><a href="#修改Unity默认缓存路径" class="headerlink" title="修改Unity默认缓存路径"></a>修改Unity默认缓存路径</h1><h2 id="1-修改Unity-GICache默认缓存路径"><a href="#1-修改Unity-GICache默认缓存路径" class="headerlink" title="1. 修改Unity GICache默认缓存路径"></a>1. 修改Unity GICache默认缓存路径</h2><p>打开Unity编辑器，找到 Editor/Preferences/GICache, 修改设置目录。</p><h2 id="2-修改Unity-Cache默认路径"><a href="#2-修改Unity-Cache默认路径" class="headerlink" title="2. 修改Unity Cache默认路径"></a>2. 修改Unity Cache默认路径</h2><p>参考文档：<a href="https://docs.unity3d.com/cn/2021.3/Manual/upm-cache.html">Unity Documentation</a></p><p>打开系统环境变量设置,新建两个环境变量覆盖默认路径。</p><p><code>UPM_CACHE_PATH</code></p><p><code>UPM_NPM_CACHE_PATH</code></p><h2 id="3-修改Unity-Asset-Store默认下载路径"><a href="#3-修改Unity-Asset-Store默认下载路径" class="headerlink" title="3. 修改Unity Asset Store默认下载路径"></a>3. 修改Unity Asset Store默认下载路径</h2><p>默认路径为 <code>%appdata%/Unity/Asset Store-5.x</code>。</p><p>修改方式如下：</p><ol><li><p>将该文件夹拷贝到目标位置。</p></li><li><p>创建软链接: <code>mklink /j %appdata%/Unity/Asset Store-5.x [目标位置]</code></p></li></ol>]]></content>
+    
+    
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>第一篇博客</title>
+    <link href="/2021/10/19/%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/"/>
+    <url>/2021/10/19/%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/</url>
+    
+    <content type="html"><![CDATA[<p>这是第一次尝试搭建博客，记录一下Markdown的语法。</p><h1 id="标题"><a href="#标题" class="headerlink" title="标题"></a>标题</h1><p>第一种标题分级格式：使用 ‘#’，例如二级标题可使用”# 二级标题”表示。</p><h2 id="二级标题"><a href="#二级标题" class="headerlink" title="二级标题"></a>二级标题</h2><h3 id="三级标题"><a href="#三级标题" class="headerlink" title="三级标题"></a>三级标题</h3><p>第二种标题分级格式：使用连续多个’=’表示一级标题，连续多个’-‘表示二级标题。</p><h2 id="我展示的是一个二级标题"><a href="#我展示的是一个二级标题" class="headerlink" title="我展示的是一个二级标题"></a>我展示的是一个二级标题</h2><h1 id="段落与字体"><a href="#段落与字体" class="headerlink" title="段落与字体"></a>段落与字体</h1><pre><code class="hljs">Markdown段落没有特殊格式，换行使用两个以上的空格加上回车即可，也可使用段落后面加一个空行表示重新开始一个段落。</code></pre><h1 id="代码区块"><a href="#代码区块" class="headerlink" title="代码区块"></a>代码区块</h1><pre><code class="hljs">代码区块可使用 3个&#39;`&#39; 包裹一段代码，并指定一种语言(也可以不指定)  例如：  </code></pre><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs C#">private void Func() &#123;<br>Console.WriteLine(&quot;这是一个示例&quot;);<br>&#125;<br></code></pre></td></tr></table></figure><h1 id="链接"><a href="#链接" class="headerlink" title="链接"></a>链接</h1><p>链接使用方式如下:<br>    [链接名称] (链接地址)(为防止预编译添加了空格，删掉) 或 &lt;链接地址&gt;<br>    例如：<br>    这是我的Github链接<a href="https://github.com/zhy-stay">zhy-stay</a></p><h1 id="图片"><a href="#图片" class="headerlink" title="图片"></a>图片</h1><p>图片格式如下:<br>![alt 属性文本] (图片地址)<br>![alt 属性文本] (图片地址 “可选标题”)<br>(同样为防止预编译添加了空格)</p><p>示例：<br><img src="http://static.runoob.com/images/runoob-logo.png" alt="RUNOOB 图标"></p><p>Markdown 还没有办法指定图片的高度与宽度，如果你需要的话，你可以使用普通的 <img> 标签。</p><p>示例：<br><img src="http://static.runoob.com/images/runoob-logo.png" width="25%"></p><p>大致常用的就这些了，其他的技巧就在<a href="https://www.runoob.com/markdown/md-tutorial.html">菜鸟教程</a>查阅了。</p>]]></content>
+    
+    
+    <categories>
+      
+      <category>生活</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>杂记</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  
+</search>
